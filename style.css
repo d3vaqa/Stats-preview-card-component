@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+}
+
+.card-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  border: 2px solid seagreen;
+  background-color: hsl(244, 38%, 16%);
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: repeat(1fr 3);
+
+  padding: 45px;
+}
+
+.card-content-paragraph {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6rem;
+}
+
+.card-hero .heading {
+  font-size: 40px;
+  color: hsl(0, 0%, 100%);
+}
+
+.card-hero .card-counter {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.queries,
+.templates,
+.companies {
+  padding: 0 20px;
+}
+.card-counter .stat-heading {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 30px;
+  text-transform: uppercase;
+}
